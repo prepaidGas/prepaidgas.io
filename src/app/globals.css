@@ -141,7 +141,7 @@ header {
   font-weight: 500;
   cursor: pointer;
   background-size: 18%;
-  background-image: url(/images/arrow_btn.svg);
+  background-image: url(/docs/images/arrow_btn.svg);
   background-repeat: no-repeat;
   background-position: 92% 50%;
   transition: 0.4s;
@@ -233,7 +233,7 @@ section h2 {
   background-color: var(--main-bg-color);
   width: max-content;
   border-radius: 6px;
-  background-image: url(/images/link_arrow.svg);
+  background-image: url(/docs/images/link_arrow.svg);
   background-repeat: no-repeat;
   background-size: 12%;
   background-position: 94% 50%;
