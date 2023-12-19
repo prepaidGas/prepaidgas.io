@@ -44,7 +44,7 @@ export default function AccordionItem({
       >
         <p className="accordion_item_name ">
           <img
-            src="/docs/images/arrow_down.svg"
+            src="/images/arrow_down.svg"
             alt=""
             className={`transition-all duration-[500ms]  ${
               isOpen ? "rotate-180" : "transform-none"
@@ -65,7 +65,7 @@ export default function AccordionItem({
           className={`h-[10rem] w-[10rem] lg:h-[15rem] lg:w-[15rem] ${
             isOpen ? "flex" : "pointer-events-none"
           }`}
-          src="/docs/images/img_placeholder.png"
+          src="/images/img_placeholder.png"
           alt=""
         />
         <p

@@ -35,31 +35,31 @@ export default function Home() {
     {
       title: "Creating a Gas Order",
       body: "The user creates an order specifying the amount of Gas they want to purchase. They set a timeframe for when they need it, propose a price in their chosen token, and specify the security deposit required to ensure the transaction will be executed.",
-      pathToImage: "/docs/images/Image_placeholder.png",
+      pathToImage: "/images/Image_placeholder.png",
     },
     {
       title: "Executor Accepts Order",
       body: "An executor reviews and selects orders they are willing to fulfill. They commit to sending the transaction on behalf of the user when requested. To guarantee this commitment, the executor locks in the security deposit specified by the user",
-      pathToImage: "/docs/images/Image_placeholder.png",
+      pathToImage: "/images/Image_placeholder.png",
     },
     {
       title: "Transaction Request Processing",
       body: `Within the order's timeframe (e.g., 1 month), the user signs a transaction request, setting a deadline. This signature is sent to the executor (and other relevant parties if needed). The executor then includes the signature in the blockchain.`,
-      pathToImage: "/docs/images/Image_placeholder.png",
+      pathToImage: "/images/Image_placeholder.png",
     },
     {
       title: "Transaction Execution or Executor Liquidation",
       body: `The executor carries out the transaction. If they fail to do so, any party can execute the transaction and claim part of the executor's security deposit. Alternatively, the user can choose to not proceed with the transaction and receive the part of executor's security deposit.`,
-      pathToImage: "/docs/images/Image_placeholder.png",
+      pathToImage: "/images/Image_placeholder.png",
     },
   ];
 
   const SOCIAL_ICONS_PATHS = {
-    twitter: "/docs/images/x-twitter.svg",
-    github: "/docs/images/github.svg",
-    telegram: "/docs/images/telegram.svg",
-    medium: "/docs/images/medium.svg.png",
-    linkedin: "/docs/images/linkedin.svg",
+    twitter: "/images/x-twitter.svg",
+    github: "/images/github.svg",
+    telegram: "/images/telegram.svg",
+    medium: "/images/medium.svg.png",
+    linkedin: "/images/linkedin.svg",
   };
 
   const TeamMemberData: TeamMember[] = [
@@ -67,7 +67,7 @@ export default function Home() {
       name: "web3skeptic",
       about:
         "Founder and driving force behind the concept. Works on architecture design, smart contract and front-end development",
-      profilePicName: "/docs/images/profile/web3skeptic.jpeg",
+      profilePicName: "/images/profile/web3skeptic.jpeg",
       socials: [
         {
           name: "twitter",
@@ -85,8 +85,8 @@ export default function Home() {
       name: "SekMak",
       about:
         "Co-Founder. Plays a key role in designing the architecture and smart contract development, often prompting pivotal architectural changes with insightful questions",
-      //profilePicName: "/docs/images/profile/sekmak.jpeg",
-      profilePicName: "/docs/images/profile/shrek1.jpeg",
+      //profilePicName: "/images/profile/sekmak.jpeg",
+      profilePicName: "/images/profile/shrek1.jpeg",
       socials: [
         {
           name: "github",
@@ -109,7 +109,7 @@ export default function Home() {
       name: "Nikita Romashchenko",
       about:
         "Front-End Lead. Oversees all aspects of front-end development, ensuring a seamless and user-friendly interface.",
-      profilePicName: "/docs/images/profile/shrek1.jpeg",
+      profilePicName: "/images/profile/shrek1.jpeg",
       socials: [
         {
           name: "github",
@@ -139,7 +139,7 @@ export default function Home() {
             >
               <img
                 id="close-btn"
-                src="/docs/images/mobile_open.svg"
+                src="/images/mobile_open.svg"
                 alt="Open sidebar button"
                 className={`mobile_open !md:hidden transition duration-500 ease-in-out ${
                   isSidebarOpen ? "opacity-0" : "opacity-100"
@@ -147,7 +147,7 @@ export default function Home() {
               />
               <img
                 id="open-btn"
-                src="/docs/images/mobile_close.svg"
+                src="/images/mobile_close.svg"
                 alt="Close sidebar button"
                 className={`mobile_close !md:hidden transition duration-500 ease-in-out ${
                   isSidebarOpen ? "opacity-100" : "opacity-0"
