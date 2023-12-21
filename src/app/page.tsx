@@ -121,7 +121,7 @@ export default function Home() {
   ];
 
   return (
-    <main className={inter.className}>
+    <main className={inter.className + " p-5"}>
       <header>
         <div className="container">
           <div className="header_wrapper">
@@ -159,11 +159,21 @@ export default function Home() {
                 isSidebarOpen ? "translate-x-[0%]" : "translate-x-[100%]"
               }`}
             >
-              <a href="#description">How does it work?</a>
-              <a href="#use_cases">Use cases</a>
-              <a href="#contact_us">Contact us</a>
-              <a href="#roadmap">Roadmap</a>
-              <a href="#team">Team</a>
+              <a onClick={() => setIsSidebarOpen(false)} href="#description">
+                How does it work?
+              </a>
+              <a onClick={() => setIsSidebarOpen(false)} href="#use_cases">
+                Use cases
+              </a>
+              <a onClick={() => setIsSidebarOpen(false)} href="#contact_us">
+                Contact us
+              </a>
+              <a onClick={() => setIsSidebarOpen(false)} href="#roadmap">
+                Roadmap
+              </a>
+              <a onClick={() => setIsSidebarOpen(false)} href="#team">
+                Team
+              </a>
             </div>
           </div>
         </div>
@@ -212,8 +222,8 @@ export default function Home() {
       <section className="use_cases" id="use_cases">
         <div className="container">
           <h2>Use cases</h2>
-          <div className="use_cases_content">
-            <div className="use_cases_content_left">
+          <div className="use_cases_content  flex-col gap-0 mt-10 md:gap-7 md:flex-row">
+            <div className="use_cases_content_left ">
               <h3>Layer 2 Networks</h3>
               <p>
                 A significant portion of Gas costs are incurred by Layer 2
@@ -224,10 +234,10 @@ export default function Home() {
                 that helps stabilize the cost of Layer 1 expenses, making
                 financial planning more predictable for L2 networks.
               </p>
-              <a href="">Read more</a>
+              {/*<a href="">Read more</a>*/}
             </div>
-            <div className="use_cases_content_right">
-              <div className="use_cases_second_block">
+            <div className="use_cases_content_right md:gap-7 ">
+              <div className="use_cases_second_block mt-5 md:mt-0">
                 <a href="">DAOs and Voting</a>
                 <p>
                   DAO (Decentralized Autonomous Organization) voting and actions
@@ -239,7 +249,7 @@ export default function Home() {
                   adoption, and making governance costs more predictable
                 </p>
               </div>
-              <div className="use_cases_third_block">
+              <div className="use_cases_third_block mt-5 md:mt-0">
                 <a href="">Account Abstraction</a>
                 <p>
                   Account abstraction allows Gas fees to be paid in various
@@ -264,12 +274,10 @@ export default function Home() {
               For inquiries, please contact us through our Telegram channel,
               Twitter, or by submitting an issue on GitHub.
             </p>
-            <div className="contact_logos">
+            <div className="contact_logos gap-[10%]">
               <a href="https://t.me/prepaidgas" target="_blank">
                 <img
                   src={SOCIAL_ICONS_PATHS["telegram"]}
-                  width={300}
-                  height={300}
                   alt="Link to our telegram channel"
                 />
                 <p>telegram</p>
@@ -277,8 +285,6 @@ export default function Home() {
               <a href="https://github.com/prepaidgas" target="_blank">
                 <img
                   src={SOCIAL_ICONS_PATHS["github"]}
-                  width={300}
-                  height={300}
                   alt="Link to github page"
                 />
                 <p>github</p>
@@ -296,10 +302,10 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="roadmap" id="roadmap">
+      <section className="roadmap mt-[100px]" id="roadmap">
         <div className="container">
           <h2>Roadmap</h2>
-          <div className="roadmap_body">
+          <div className="roadmap_body mx-0 md:mx-[10%] lg:mx-[20%]">
             <h3>Version 0.1</h3>
             <div className="roadmap_item">
               <input type="checkbox" disabled checked />

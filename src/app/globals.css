@@ -202,7 +202,7 @@ section h2 {
 }
 
 .use_cases {
-  margin-top: 7%;
+  margin-top: 100px;
 }
 
 .use_cases_content {
@@ -211,8 +211,9 @@ section h2 {
   justify-content: space-between;
   color: var(--main-font-color);
 }
+
 .use_cases_content .use_cases_content_left {
-  max-width: 50%;
+  /*max-width: 50%;*/
   background-color: var(--secondary-color);
   border-radius: 20px;
   padding: 20px;
@@ -245,10 +246,9 @@ section h2 {
   background-color: rgb(244, 244, 244);
 }
 .use_cases_content .use_cases_content_right {
-  max-width: 47%;
+  /*max-width: 47%;*/
   flex-grow: 1;
   display: flex;
-  gap: 2em;
   flex-direction: column;
 }
 .use_cases_content .use_cases_content_right div {
@@ -277,7 +277,7 @@ section h2 {
 }
 
 .contact_us {
-  margin-top: 7%;
+  margin-top: 100px;
 }
 
 .contact_info {
@@ -296,7 +296,6 @@ section h2 {
 
 .contact_logos {
   display: flex;
-  gap: 80px;
   margin-top: 50px;
 }
 .contact_logos img {
@@ -347,10 +346,6 @@ section h2 {
   background-color: #8fe0a6;
 }
 
-.roadmap {
-  margin-top: 200px;
-}
-
 .roadmap_body {
   margin-top: 5%;
 }
@@ -365,8 +360,6 @@ section h2 {
   display: flex;
   justify-content: flex-start;
   gap: 0.7em;
-  margin-left: 27%;
-  margin-right: 27%;
   margin-top: 12px;
 }
 .roadmap_item input {
@@ -446,9 +439,6 @@ footer {
 @media (max-width: 1100px) {
   .container {
     max-width: 93%;
-  }
-  .roadmap_item {
-    margin-left: calc(30% - 50px);
   }
 }
 @media (max-width: 1000px) {

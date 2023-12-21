@@ -57,12 +57,12 @@ export default function AccordionItem({
         ref={accordionBodyRef}
         className={`flex flex-col items-center justify-start lg:justify-center lg:items-start lg:flex-row lg:gap-4 transition-all duration-[500ms]  ${
           isOpen
-            ? `max-h-[300px] opacity-100 overflow-y-scroll`
+            ? `max-h-[1000px] opacity-100 overflow-y-scroll`
             : "max-h-0 opacity-0"
         }`}
       >
         <img
-          className={`h-[10rem] w-[10rem] lg:h-[15rem] lg:w-[15rem] ${
+          className={`h-[8rem] w-[8rem] md:h-[10rem] md:w-[10rem] lg:h-[15rem] lg:w-[15rem] ${
             isOpen ? "flex" : "pointer-events-none"
           }`}
           src="/images/img_placeholder.png"
