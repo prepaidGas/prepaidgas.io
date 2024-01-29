@@ -61,13 +61,13 @@ export default function AccordionItem({
             : "max-h-0 opacity-0"
         }`}
       >
-        <img
+        {/* <img
           className={`h-[8rem] w-[8rem] md:h-[10rem] md:w-[10rem] lg:h-[15rem] lg:w-[15rem] ${
             isOpen ? "flex" : "pointer-events-none"
           }`}
           src="/images/img_placeholder.png"
           alt=""
-        />
+        /> */}
         <p
           ref={descriptionRef}
           className={`text-center text-xl lg:text-left accordion_item_content ${

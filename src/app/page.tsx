@@ -23,10 +23,12 @@ interface SocialLink {
 }
 
 const inter = Inter({
-  weight: ["400", "500", "600"], // if single weight, otherwise you use array like [400, 500, 700],
+  weight: ["400", "500", "600", "900"], // if single weight, otherwise you use array like [400, 500, 700],
   style: "normal", // if single style, otherwise you use array like ['normal', 'italic']
   subsets: ["latin"],
 });
+
+const currentYear = new Date().getFullYear();
 
 export default function Home() {
   const [isSidebarOpen, setIsSidebarOpen] = useState(false);
@@ -125,7 +127,9 @@ export default function Home() {
       <header>
         <div className="container">
           <div className="header_wrapper">
-            <div className="header_logo"></div>
+            <div className="header_logo !bg-transparent !w-auto !h-auto text-xl md:text-2xl font-[900]">
+              prepaidGas
+            </div>
             <div className="header_links">
               <a href="#description">How does it work?</a>
               <a href="#use_cases">Use cases</a>
@@ -409,8 +413,8 @@ export default function Home() {
       <footer>
         <div className="container">
           <p>
-            PrepaidGas © 2023 years after Christ's birth | 13.8 billion years
-            after the appearance of the universe
+            PrepaidGas © {currentYear} years after Christ's birth | 13.8 billion
+            years after the appearance of the universe
           </p>
         </div>
       </footer>
