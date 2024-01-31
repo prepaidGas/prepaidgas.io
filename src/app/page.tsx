@@ -88,7 +88,7 @@ export default function Home() {
       about:
         "Co-Founder. Plays a key role in designing the architecture and smart contract development, often prompting pivotal architectural changes with insightful questions",
       //profilePicName: "/images/profile/sekmak.jpeg",
-      profilePicName: "/images/profile/shrek1.jpeg",
+      profilePicName: "/images/profile/profile2and3.jpg",
       socials: [
         {
           name: "github",
@@ -111,7 +111,7 @@ export default function Home() {
       name: "Nikita Romashchenko",
       about:
         "Front-End Lead. Oversees all aspects of front-end development, ensuring a seamless and user-friendly interface.",
-      profilePicName: "/images/profile/shrek1.jpeg",
+      profilePicName: "/images/profile/profile2and3.jpg",
       socials: [
         {
           name: "github",
