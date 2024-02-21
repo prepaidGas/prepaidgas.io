@@ -27,6 +27,7 @@ body {
 .container {
   max-width: 1024px;
   margin: auto;
+  width: auto;
 }
 
 header {
@@ -387,7 +388,6 @@ section h2 {
   align-items: center;
 }
 .team_cards_item img {
-  width: 150px;
   margin-bottom: 10px;
 }
 .team_cards_item h3 {
