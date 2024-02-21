@@ -361,8 +361,11 @@ export default function Home() {
                   />
                   <p>github</p>
                 </a>
-                <a href="#" target="_blank">
-                  <img src={SOCIAL_ICONS_PATHS["twitter"]} alt="" />
+                <a href="https://twitter.com/prepaidgas_io" target="_blank">
+                  <img
+                    src={SOCIAL_ICONS_PATHS["twitter"]}
+                    alt="Link to github page"
+                  />
                   <p>X/twitter</p>
                 </a>
               </div>
