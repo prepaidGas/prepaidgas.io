@@ -89,7 +89,7 @@ const TeamMemberData: TeamMember[] = [
     name: "Stepan",
     about: "Designing and securing the protocol core",
     //profilePicName: "/images/profile/sekmak.jpeg",
-    profilePicName: "/images/profile/Stepan.jpg",
+    profilePicName: "/images/profile/Stepan_new.jpg",
     socials: [
       {
         name: "github",
@@ -124,7 +124,7 @@ const TeamMemberData: TeamMember[] = [
   {
     name: "Nikita",
     about: "Ensuring a seamless and user-friendly interface",
-    profilePicName: "/images/profile/Nikita.jpg",
+    profilePicName: "/images/profile/Nikita_new.jpg",
     socials: [
       {
         name: "github",
