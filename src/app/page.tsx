@@ -115,9 +115,9 @@ const TeamMemberData: TeamMember[] = [
     profilePicName: "/images/profile/Tim.jpg",
     socials: [
       {
-        name: "github",
-        iconPath: SOCIAL_ICONS_PATHS["github"],
-        url: "https://github.com/nikita-romashchenko",
+        name: "linkedin",
+        iconPath: SOCIAL_ICONS_PATHS["linkedin"],
+        url: "https://www.linkedin.com/in/timretkoceri/",
       },
     ],
   },
