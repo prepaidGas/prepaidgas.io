@@ -35,7 +35,7 @@ export const SOCIAL_ICONS_PATHS = {
 
 export const TeamMemberData: TeamMember[] = [
   {
-    name: "Maksym",
+    name: "Max",
     about: "Oversees development and strategic goals",
     profilePicName: "/images/profile/Maksym.jpeg",
     socials: [

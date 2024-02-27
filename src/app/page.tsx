@@ -193,7 +193,7 @@ export default function Home() {
                       alt=""
                       className="rounded-[50%] w-auto md:w-[180px] lg:w-auto max-w-[250px] p-3"
                     />
-                    <h3 className="text-color-emerald">{item.name}</h3>
+                    <h3 className="">{item.name}</h3>
                     <p className="text-center">{item.about}</p>
                     <div className="team_card_links hidden">
                       {item.socials?.map((i, index) => (
