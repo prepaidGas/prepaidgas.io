@@ -488,3 +488,7 @@ footer {
 .hover_btn {
   @apply transition-all hover:scale-90;
 }
+
+.section_title {
+  @apply text-color-emerald;
+}

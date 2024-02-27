@@ -208,7 +208,7 @@ export default function Home() {
       <div className="p-5">
         <header className="font-poppins">
           <div className="container">
-            <div className="header_wrapper">
+            <div className="header_wrapper text-color-emerald">
               <div className="header_logo !bg-transparent !w-auto !h-auto text-xl md:text-xl lg:text-2xl font-[900] flex flex-row gap-3 items-center cursor-default">
                 <img
                   src="/images/logo.png"
@@ -292,12 +292,13 @@ export default function Home() {
             </div>
             <div className="hero_btns lg:ml-[80px]">
               <button
-                className={`main_btn animate-wiggle hover:animate-none flex justify-center items-center font-raleway text-2xl font-extrabold bg-gradient-to-l from-color-vibrant-pink to-color-charcoal-gray p-2 rounded-md`}
+                //   className={`main_btn flex justify-center items-center font-raleway text-2xl font-extrabold rounded-md p-2 bg-gradient-to-l from-color-vibrant-pink to-color-charcoal-gray`}
+                // >
+                className={`main_btn flex justify-center items-center font-raleway text-2xl font-extrabold rounded-md p-2  bg-color-vibrant-pink hover:bg-color-sky-blue text-color-vibrant-pink hover:text-color-sky-blue`}
               >
                 <div className="bg-color-soft-white h-full w-full p-[24px] rounded-md">
-                  <p className="text-transparent bg-clip-text bg-gradient-to-l from-color-vibrant-pink to-color-charcoal-gray">
-                    Get Started
-                  </p>
+                  {/* <p className="text-transparent bg-clip-text bg-gradient-to-l from-color-vibrant-pink to-color-charcoal-gray"> */}
+                  <p>Get Started</p>
                 </div>
               </button>
               {/*<button className="secondary_btn">Request Demo</button>*/}
@@ -306,7 +307,7 @@ export default function Home() {
         </section>
         <section className="description" id="description">
           <div className="container">
-            <h2>How does it work?</h2>
+            <h2 className="section_title">How does it work?</h2>
             <div className="accordion">
               {accordionData.map((item, index) => (
                 <Accordion
@@ -322,7 +323,7 @@ export default function Home() {
 
         <section className="roadmap mt-[100px]" id="roadmap">
           <div className="container">
-            <h2>Roadmap</h2>
+            <h2 className="section_title">Roadmap</h2>
             <div className="roadmap_body mx-0 md:mx-[10%] lg:mx-[20%]">
               {roadmapData.map((item) => (
                 <>
@@ -339,7 +340,7 @@ export default function Home() {
 
         <section className="team" id="team">
           <div className="container">
-            <h2>Team</h2>
+            <h2 className="section_title">Team</h2>
             <div className="team_cards_wrapper">
               <div className="team_cards">
                 {TeamMemberData.map((item, index) => (
@@ -352,7 +353,7 @@ export default function Home() {
                       alt=""
                       className="rounded-[50%] w-auto md:w-[180px] lg:w-auto max-w-[250px] p-3"
                     />
-                    <h3>{item.name}</h3>
+                    <h3 className="text-color-emerald">{item.name}</h3>
                     <p className="text-center">{item.about}</p>
                     <div className="team_card_links hidden">
                       {item.socials?.map((i, index) => (
@@ -395,7 +396,7 @@ export default function Home() {
 
         <section className="contact_us" id="contact_us">
           <div className="container">
-            <h2>Contact us</h2>
+            <h2 className="section_title">Contact us</h2>
             <div className="contact_info">
               <p>
                 For inquiries, please contact us through our Telegram channel,
