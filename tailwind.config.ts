@@ -41,11 +41,12 @@ const config: Config = {
       },
       keyframes: {
         wiggle: {
-          "0%": { transform: "scale(90%)" },
+          "0%, 100%": { transform: "rotate(-2deg)" },
+          "50%": { transform: "rotate(2deg)" },
         },
       },
       animation: {
-        wiggle: "wiggle 100ms ease-in-out",
+        wiggle: "wiggle 2s ease-in-out infinite",
       },
     },
   },

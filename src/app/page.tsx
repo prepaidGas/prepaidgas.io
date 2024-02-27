@@ -200,7 +200,6 @@ const roadmapData: RoadmapItem[] = [
 
 export default function Home() {
   const [isSidebarOpen, setIsSidebarOpen] = useState(false);
-  useEffect(() => console.log(isSidebarOpen), [isSidebarOpen]);
 
   return (
     <main
@@ -292,8 +291,14 @@ export default function Home() {
               </div>
             </div>
             <div className="hero_btns lg:ml-[80px]">
-              <button className="main_btn font-raleway bg-color-vibrant-pink">
-                Get Started{" "}
+              <button
+                className={`main_btn animate-wiggle hover:animate-none flex justify-center items-center font-raleway text-2xl font-extrabold bg-gradient-to-l from-color-vibrant-pink to-color-charcoal-gray p-2 rounded-md`}
+              >
+                <div className="bg-color-soft-white h-full w-full p-[24px] rounded-md">
+                  <p className="text-transparent bg-clip-text bg-gradient-to-l from-color-vibrant-pink to-color-charcoal-gray">
+                    Get Started
+                  </p>
+                </div>
               </button>
               {/*<button className="secondary_btn">Request Demo</button>*/}
             </div>

@@ -144,20 +144,11 @@ header {
   align-items: center;
 }
 .hero_btns .main_btn {
-  border: 1px solid rgb(177, 182, 226);
-  border-radius: 16px;
-  padding: 24px 92px 24px 24px;
-  font-size: 24px;
-  font-weight: 500;
   cursor: pointer;
-  background-size: 18%;
-  background-image: url(/images/arrow_btn.svg);
-  background-repeat: no-repeat;
-  background-position: 92% 50%;
   transition: 0.4s;
 }
 .hero_btns .main_btn:hover {
-  @apply filter_scale;
+  @apply hover_btn;
 }
 .hero_btns .secondary_btn {
   border: none;
@@ -492,4 +483,8 @@ footer {
 
 .hover_header {
   @apply transition-all hover:scale-95 text-color-sky-blue;
+}
+
+.hover_btn {
+  @apply transition-all hover:scale-90;
 }
