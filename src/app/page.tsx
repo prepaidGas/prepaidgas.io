@@ -3,12 +3,14 @@ import { useEffect, useState } from "react";
 import Accordion from "../components/Accordion";
 import { Poppins, Raleway, Nunito } from "next/font/google";
 import {
+  COLOR_SCHEME,
   SOCIAL_ICONS_PATHS,
   TeamMemberData,
   accordionData,
   roadmapData,
 } from "@/constants";
 import Roadmap from "@/components/Roadmap/Roadmap";
+import SocialIcon from "@/components/SocialIcon";
 
 export interface TeamMember {
   name: string;
@@ -122,47 +124,28 @@ export default function Home() {
               </div>
             </div>
           </header>
-          <div className="bg1 bg-color-sky-blue"></div>
-          <section className="mt-[10%] font-raleway w-full max-w-[1024px]">
-            {/* <div className="">
-            <div className="hero flex-col lg:flex-row lg:items-center">
-              <div className="hero_left m-0 w-full text-center  lg:flex-1 lg:grow-[1.5] lg:w-[12.4em] lg:text-right">
-
-              </div>
-              <div className="hero_right pt-4 lg:pt-0 lg:pl-[20px] grow text-center lg:flex-1 lg:grow lg:text-left">
-
-              </div>
-            </div>
-            <div className="hero_btns">
-              <button
-                className={`main_btn flex justify-center items-center font-raleway text-2xl font-extrabold rounded-md p-2  bg-color-vibrant-pink hover:bg-color-sky-blue text-color-vibrant-pink hover:text-color-sky-blue`}
-              >
-                <div className="bg-color-soft-white h-full w-full p-[24px] rounded-md">
-                  <p>Get Started</p>
-                </div>
-              </button>
-            </div>
-          </div> */}
+          <div className="bg1 bg-color-emerald"></div>
+          <section className="mt-[100px] md:mt-[150px] md:ml-8 lg:mt-[175px] font-raleway w-full max-w-[1024px]">
             <div className="flex flex-col gap-4">
-              <h1 className="text-7xl md:text-8xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-color-vibrant-pink to-color-charcoal-gray">
+              <p className="text-7xl md:text-8xl max-w-[750px] font-bold text-transparent bg-clip-text bg-gradient-to-r from-color-charcoal-gray to-color-cool-gray">
                 Buy Gas now
                 <br />
                 use it later
-              </h1>
+              </p>
               <p className="text-2xl font-light max-w-[500px]">
                 The PrepaidGas protocol is a decentralized and permissionless
                 system that enables a Gas futures market. It allows L2s to
                 purchase Gas in advance to trade or utilize it as required in
-                the future.
+                the future
               </p>
-              <button className="btn">
+              <button className="btn mt-4">
                 <p>Get started</p>
               </button>
             </div>
           </section>
         </div>
 
-        <section className="description" id="description">
+        <section id="description">
           <div className="container">
             <h2 className="section_title">How does it work?</h2>
             <div className="mt-8">
@@ -217,10 +200,16 @@ export default function Home() {
                           href={i.url}
                           target="_blank"
                         >
-                          <img
+                          {/* <img
                             className="w-[2rem] h-[2rem] filter_scale"
                             src={i.iconPath}
                             alt={i.name}
+                          /> */}
+                          <SocialIcon
+                            className="filter_scale"
+                            socialNetwork={i.name}
+                            width="2rem"
+                            height="2rem"
                           />
                         </a>
                       ))}
@@ -237,32 +226,32 @@ export default function Home() {
           <div className="container">
             <h2 className="section_title">Contact us</h2>
             <div className="contact_info">
-              <div className="contact_logos gap-20 my-4">
+              <div className="contact_logos gap-10 my-4">
                 <a href="https://t.me/prepaidgas" target="_blank">
-                  <img
+                  <SocialIcon
                     className="filter_scale"
-                    src={SOCIAL_ICONS_PATHS["telegram"]}
-                    alt="Link to our telegram channel"
-                    width={64}
-                    height={64}
+                    socialNetwork="telegram"
+                    width="64px"
+                    height="64px"
+                    color={COLOR_SCHEME.VIBRANT_PINK}
                   />
                 </a>
                 <a href="https://github.com/prepaidgas" target="_blank">
-                  <img
+                  <SocialIcon
                     className="filter_scale"
-                    src={SOCIAL_ICONS_PATHS["github"]}
-                    alt="Link to github page"
-                    width={64}
-                    height={64}
+                    socialNetwork="github"
+                    width="64px"
+                    height="64px"
+                    color={COLOR_SCHEME.VIBRANT_PINK}
                   />
                 </a>
                 <a href="https://twitter.com/prepaidgas_io" target="_blank">
-                  <img
+                  <SocialIcon
                     className="filter_scale"
-                    src={SOCIAL_ICONS_PATHS["twitter"]}
-                    alt="Link to github page"
-                    width={64}
-                    height={64}
+                    socialNetwork="twitter"
+                    width="64px"
+                    height="64px"
+                    color={COLOR_SCHEME.VIBRANT_PINK}
                   />
                 </a>
               </div>
@@ -275,38 +264,38 @@ export default function Home() {
         </section>
       </div>
       <footer className="bg-color-charcoal-gray text-color-cool-gray flex justify-center">
-        <div className="p-5 flex flex-col-reverse gap-4 md:flex-row md:gap-0 items-center w-full md:justify-between max-w-[1024px]">
+        <div className="p-5 flex flex-col-reverse gap-4 md:flex-row md:gap-0 items-center w-full md:justify-between max-w-[1600px]">
           <p className="shrink-0 text-center md:text-left">
             PrepaidGas © {currentYear} years after Christ's birth
             <br></br>
             13.8 billion years after the appearance of the universe
           </p>
-          <div className="flex gap-10 shrink-0">
+          <div className="flex gap-4 shrink-0">
             <a href="https://t.me/prepaidgas" target="_blank">
-              <img
+              <SocialIcon
                 className="filter_scale"
-                src={SOCIAL_ICONS_PATHS["telegram"]}
-                alt="Link to our telegram channel"
-                width={32}
-                height={32}
+                socialNetwork="telegram"
+                width="24px"
+                height="24px"
+                color={COLOR_SCHEME.COOL_GRAY}
               />
             </a>
             <a href="https://github.com/prepaidgas" target="_blank">
-              <img
+              <SocialIcon
                 className="filter_scale"
-                src={SOCIAL_ICONS_PATHS["github"]}
-                alt="Link to github page"
-                width={32}
-                height={32}
+                socialNetwork="github"
+                width="24px"
+                height="24px"
+                color={COLOR_SCHEME.COOL_GRAY}
               />
             </a>
             <a href="https://twitter.com/prepaidgas_io" target="_blank">
-              <img
+              <SocialIcon
                 className="filter_scale"
-                src={SOCIAL_ICONS_PATHS["twitter"]}
-                alt="Link to github page"
-                width={32}
-                height={32}
+                socialNetwork="twitter"
+                width="24px"
+                height="24px"
+                color={COLOR_SCHEME.COOL_GRAY}
               />
             </a>
           </div>

@@ -148,3 +148,21 @@ export const roadmapData: RoadmapItem[] = [
     body: "Plaguing for with Ethers.js and web3.js libraries",
   },
 ];
+
+export const COLOR_SCHEME = {
+  /*headings important text*/
+  EMERALD: "#009688",
+  /* Use sky blue for links, call-to-action buttons, and hover effects. Its lighter, welcoming tone complements emerald green and encourages user interaction.
+  Secondary Text and Details */
+  SKY_BLUE: "#87ceeb",
+  /* For navigation bars and footers, charcoal gray offers a strong contrast against soft white, making navigation elements easy to locate and read. */
+  CHARCOAL_GRAY: "#36454f",
+  /*background*/
+  SOFT_WHITE: "#f5f5f5",
+  /* secondary text */
+  COOL_GRAY: "#aab7b8",
+  /* primary calls to action */
+  VIBRANT_PINK: "#ff8187",
+};
+
+export const MAIN_ICON_COLOR = COLOR_SCHEME.EMERALD;

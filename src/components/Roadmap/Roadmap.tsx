@@ -14,7 +14,7 @@ export default function Roadmap({
   return (
     <ul className="timeline">
       {roadmapData.map((item, index) => (
-        <li>
+        <li key={`roadmap-item-${index}`}>
           <div className={`${index % 2 ? "direction-r" : "direction-l"}`}>
             <div className="flag-wrapper">
               <span className="hexa"></span>
