@@ -2,27 +2,22 @@
 import { useEffect, useState } from "react";
 import Accordion from "../components/Accordion";
 import { Poppins, Raleway, Nunito } from "next/font/google";
+import {
+  SOCIAL_ICONS_PATHS,
+  TeamMemberData,
+  accordionData,
+  roadmapData,
+} from "@/constants";
+import Roadmap from "@/components/Roadmap/Roadmap";
 
-interface AccordionItem {
-  title: string;
-  body: string;
-  pathToImage: string;
-}
-
-interface RoadmapItem {
-  title: string;
-  body: string;
-  checked: boolean;
-}
-
-interface TeamMember {
+export interface TeamMember {
   name: string;
   about: string;
   profilePicName: any;
   socials?: SocialLink[];
 }
 
-interface SocialLink {
+export interface SocialLink {
   name: string;
   iconPath: string;
   url: string;
@@ -51,153 +46,6 @@ const nunito = Nunito({
 
 const currentYear = new Date().getFullYear();
 
-const accordionData: AccordionItem[] = [
-  {
-    title: "Creating a Gas Order",
-    body: "The user creates an order specifying the amount of Gas they want to purchase. They set a timeframe for when they need it, propose a price in their chosen token, and specify the security deposit required to ensure the transaction will be executed.",
-    pathToImage: "/images/Image_placeholder.png",
-  },
-  {
-    title: "Executor Accepts Order",
-    body: "An executor reviews and selects orders they are willing to fulfill. They commit to sending the transaction on behalf of the user when requested. To guarantee this commitment, the executor locks in the security deposit specified by the user",
-    pathToImage: "/images/Image_placeholder.png",
-  },
-  {
-    title: "Transaction Request Processing",
-    body: `Within the order's timeframe (e.g., 1 month), the user signs a transaction request, setting a deadline. This signature is sent to the executor (and other relevant parties if needed). The executor then includes the signature in the blockchain.`,
-    pathToImage: "/images/Image_placeholder.png",
-  },
-  {
-    title: "Transaction Execution or Executor Liquidation",
-    body: `The executor carries out the transaction. If they fail to do so, any party can execute the transaction and claim part of the executor's security deposit. Alternatively, the user can choose to not proceed with the transaction and receive the part of executor's security deposit.`,
-    pathToImage: "/images/Image_placeholder.png",
-  },
-];
-
-const SOCIAL_ICONS_PATHS = {
-  twitter: "/images/x-twitter.svg",
-  github: "/images/github.svg",
-  telegram: "/images/telegram.svg",
-  medium: "/images/medium.svg.png",
-  linkedin: "/images/linkedin.svg",
-};
-
-const TeamMemberData: TeamMember[] = [
-  {
-    name: "Maksym",
-    about: "Oversees development and strategic goals",
-    profilePicName: "/images/profile/Maksym.jpeg",
-    socials: [
-      {
-        name: "twitter",
-        iconPath: SOCIAL_ICONS_PATHS["twitter"],
-        url: "https://twitter.com/web3skeptic",
-      },
-      {
-        name: "github",
-        iconPath: SOCIAL_ICONS_PATHS["github"],
-        url: "https://github.com/web3skeptic",
-      },
-    ],
-  },
-  {
-    name: "Stepan",
-    about: "Designing and securing the protocol core",
-    //profilePicName: "/images/profile/sekmak.jpeg",
-    profilePicName: "/images/profile/Stepan_new.jpg",
-    socials: [
-      {
-        name: "github",
-        iconPath: SOCIAL_ICONS_PATHS["github"],
-        url: "https://github.com/SteMak",
-      },
-      {
-        name: "medium",
-        iconPath: SOCIAL_ICONS_PATHS["medium"],
-        url: "https://medium.com/@SteMak",
-      },
-      {
-        name: "linkedin",
-        iconPath: SOCIAL_ICONS_PATHS["linkedin"],
-        url: "https://linkedin.com/in/SteMak",
-      },
-    ],
-  },
-
-  {
-    name: "Tim",
-    about: "Talking to the community and growing prepaidGas",
-    profilePicName: "/images/profile/Tim.jpg",
-    socials: [
-      {
-        name: "twitter",
-        iconPath: SOCIAL_ICONS_PATHS["twitter"],
-        url: "https://x.com/timmyjellyjelly",
-      },
-      {
-        name: "linkedin",
-        iconPath: SOCIAL_ICONS_PATHS["linkedin"],
-        url: "https://www.linkedin.com/in/timretkoceri/",
-      },
-    ],
-  },
-  {
-    name: "Nikita",
-    about: "Ensuring a seamless and user-friendly interface",
-    profilePicName: "/images/profile/Nikita_new.jpg",
-    socials: [
-      {
-        name: "github",
-        iconPath: SOCIAL_ICONS_PATHS["github"],
-        url: "https://github.com/nikita-romashchenko",
-      },
-    ],
-  },
-];
-
-const roadmapData: RoadmapItem[] = [
-  {
-    title: "Mar 24",
-    body: "Smart contract implementation with meta-transaction support (ERC-2771)",
-    checked: false,
-  },
-  {
-    title: "April 24",
-    body: "Develop basic bot to accept Gas orders",
-    checked: false,
-  },
-  {
-    title: "Q2 24",
-    body: "Basic interface for the Gas purchasers",
-    checked: false,
-  },
-  {
-    title: "Jul 24",
-    body: "Deploy smart contracts to the testnet",
-    checked: false,
-  },
-  {
-    title: "Aug 24",
-    body: "Audit the smart contracts and verify their reliability",
-    checked: false,
-  },
-  {
-    title: "Q4 24",
-    body: "Add Account Abstraction (EIP-4337) support",
-    checked: false,
-  },
-  {
-    title: "Q1 25",
-    body: "Multichain Solution that enables trading Gas across different L2s",
-    checked: false,
-  },
-  {
-    title: "Q2 25",
-    body: "Plaguing for with Ethers.js and web3.js libraries",
-    checked: false,
-  },
-];
-
 export default function Home() {
   const [isSidebarOpen, setIsSidebarOpen] = useState(false);
 
@@ -208,7 +56,7 @@ export default function Home() {
       <div className="p-5">
         <header className="font-poppins">
           <div className="container">
-            <div className="header_wrapper text-color-emerald">
+            <div className="header_wrapper">
               <div className="header_logo !bg-transparent !w-auto !h-auto text-xl md:text-xl lg:text-2xl font-[900] flex flex-row gap-3 items-center cursor-default">
                 <img
                   src="/images/logo.png"
@@ -314,7 +162,7 @@ export default function Home() {
                   key={`accordion_item-${index}`}
                   title={`Step ${index + 1}: ${item.title}`}
                   body={item.body}
-                  pathToImg={item.pathToImage}
+                  pathToImage={item.pathToImage}
                 />
               ))}
             </div>
@@ -324,16 +172,8 @@ export default function Home() {
         <section className="roadmap mt-[100px]" id="roadmap">
           <div className="container">
             <h2 className="section_title">Roadmap</h2>
-            <div className="roadmap_body mx-0 md:mx-[10%] lg:mx-[20%]">
-              {roadmapData.map((item) => (
-                <>
-                  <h3>{item.title}</h3>
-                  <div className="roadmap_item">
-                    <input type="checkbox" disabled checked={item.checked} />
-                    <p>{item.body}</p>
-                  </div>
-                </>
-              ))}
+            <div className="flex flex-col justify-center items-center">
+              <Roadmap roadmapData={roadmapData} />
             </div>
           </div>
         </section>

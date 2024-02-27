@@ -1,17 +1,17 @@
 import { RefObject, useEffect, useState } from "react";
 import { useRef } from "react";
 
-interface AccordionProps {
+export interface AccordionItem {
   title: string;
   body: string;
-  pathToImg: string;
+  pathToImage: string;
 }
 
 export default function AccordionItem({
   title,
   body,
-  pathToImg,
-}: AccordionProps) {
+  pathToImage,
+}: AccordionItem) {
   const [isOpen, setIsOpen] = useState<boolean>(false);
 
   const descriptionRef = useRef<HTMLParagraphElement>(null);
