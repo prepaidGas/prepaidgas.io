@@ -118,7 +118,7 @@ header {
 }
 .hero h1 {
   padding: 0 20px 8px 0;
-  font-size: 90px;
+  font-size: 70px;
   font-weight: bold;
 }
 
@@ -171,10 +171,6 @@ section h2 {
 
 .description {
   margin-top: 20%;
-}
-
-.accordion {
-  margin-top: 10%;
 }
 
 .accordion_item {

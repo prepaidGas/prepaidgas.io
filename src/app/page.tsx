@@ -122,8 +122,8 @@ export default function Home() {
         <section className="heading">
           <div className="container">
             <div className="hero flex-col lg:flex-row lg:items-center">
-              <div className="hero_left m-0 w-full text-center lg:flex-1 lg:grow-[1.5] lg:w-[12.4em] lg:text-right">
-                <h1 className="whitespace-nowrap auto border-b-2 border-l-0 border-solid border-color-charcoal-gray lg:border-b-0 lg:border-r-2 text-transparent bg-clip-text bg-gradient-to-r from-color-vibrant-pink to-color-charcoal-gray">
+              <div className="hero_left m-0 w-full text-center  lg:flex-1 lg:grow-[1.5] lg:w-[12.4em] lg:text-right">
+                <h1 className="border-b-2 border-l-0 border-solid border-color-charcoal-gray lg:border-b-0 lg:border-r-2 text-transparent bg-clip-text bg-gradient-to-r from-color-vibrant-pink to-color-charcoal-gray">
                   Buy Gas now
                   <br />
                   use it later
@@ -138,7 +138,7 @@ export default function Home() {
                 </p>
               </div>
             </div>
-            <div className="hero_btns lg:ml-[80px]">
+            <div className="hero_btns">
               <button
                 //   className={`main_btn flex justify-center items-center font-raleway text-2xl font-extrabold rounded-md p-2 bg-gradient-to-l from-color-vibrant-pink to-color-charcoal-gray`}
                 // >
@@ -156,7 +156,7 @@ export default function Home() {
         <section className="description" id="description">
           <div className="container">
             <h2 className="section_title">How does it work?</h2>
-            <div className="accordion">
+            <div className="mt-8">
               {accordionData.map((item, index) => (
                 <Accordion
                   key={`accordion_item-${index}`}
