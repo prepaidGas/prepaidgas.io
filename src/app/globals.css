@@ -8,6 +8,20 @@
   --secondary-color: rgb(238, 219, 219);
   --main-font-color: #2b2727;
   --secondary-font-color: #717b8b;
+
+  /*headings important text*/
+  --color-emerald: #009688;
+  /* Use sky blue for links, call-to-action buttons, and hover effects. Its lighter, welcoming tone complements emerald green and encourages user interaction.
+Secondary Text and Details */
+  --color-sky-blue: #87ceeb;
+  /* For navigation bars and footers, charcoal gray offers a strong contrast against soft white, making navigation elements easy to locate and read. */
+  --color-charcoal-gray: #36454f;
+  /*background*/
+  --color-soft-white: #f5f5f5;
+  /* secondary text */
+  --color-cool-gray: #aab7b8;
+  /* primary calls to action */
+  --color-vibrant-pink: #ff8187;
 }
 
 * {
@@ -20,7 +34,7 @@
 
 body {
   font-family: Inter;
-  background-color: var(--main-bg-color);
+  background-color: var(--color-soft-white);
   overflow-x: hidden;
 }
 
@@ -51,13 +65,13 @@ header {
 }
 .header_wrapper .header_links a {
   text-decoration: none;
-  color: var(--main-font-color);
   font-size: 20px;
   font-weight: 500;
   transition: 0.4s;
 }
 .header_wrapper .header_links a:hover {
-  color: rgb(156, 151, 151);
+  /* color: rgb(156, 151, 151); */
+  @apply hover_header;
 }
 
 .mobile_button {
@@ -85,7 +99,6 @@ header {
 }
 .header_links_mobile a {
   text-decoration: none;
-  color: var(--main-font-color);
   font-size: 28px;
   font-weight: 500;
   text-align: right;
@@ -105,7 +118,6 @@ header {
 }
 .hero h1 {
   padding: 0 20px 8px 0;
-  color: var(--main-font-color);
   font-size: 90px;
   font-weight: bold;
 }
@@ -120,7 +132,6 @@ header {
 
 .hero .hero_right {
   flex: 1;
-  color: var(--secondary-font-color);
   font-size: 24px;
   text-wrap: balance;
 }
@@ -136,8 +147,6 @@ header {
   border: 1px solid rgb(177, 182, 226);
   border-radius: 16px;
   padding: 24px 92px 24px 24px;
-  background-color: var(--main-color);
-  color: var(--main-font-color);
   font-size: 24px;
   font-weight: 500;
   cursor: pointer;
@@ -148,14 +157,13 @@ header {
   transition: 0.4s;
 }
 .hero_btns .main_btn:hover {
-  background-color: #b0ace6;
+  @apply filter_scale;
 }
 .hero_btns .secondary_btn {
   border: none;
   border-radius: 12px;
   padding: 16px 20px 16px 20px;
-  background-color: var(--main-bg-color);
-  color: var(--main-font-color);
+  background-color: var(--color-soft-white);
   font-size: 20px;
   font-weight: 500;
   cursor: pointer;
@@ -168,7 +176,6 @@ header {
 section h2 {
   text-align: center;
   font-size: 44px;
-  color: var(--main-font-color);
 }
 
 .description {
@@ -188,7 +195,6 @@ section h2 {
   align-items: center;
   font-size: 24px;
   font-weight: 500;
-  color: var(--main-font-color);
   cursor: pointer;
 }
 .accordion_item .accordion_item_name img {
@@ -197,7 +203,6 @@ section h2 {
 }
 .accordion_item .accordion_item_content {
   line-height: 155%;
-  color: var(--secondary-font-color);
   font-size: 18px;
   margin-top: 2%;
 }
@@ -210,7 +215,6 @@ section h2 {
   margin-top: 5%;
   display: flex;
   justify-content: space-between;
-  color: var(--main-font-color);
 }
 
 .use_cases_content .use_cases_content_left {
@@ -218,7 +222,6 @@ section h2 {
   background-color: var(--secondary-color);
   border-radius: 20px;
   padding: 20px;
-  color: var(--main-font-color);
   display: flex;
   flex-direction: column;
 }
@@ -230,9 +233,8 @@ section h2 {
 }
 .use_cases_content .use_cases_content_left a {
   text-decoration: none;
-  color: var(--secondary-font-color);
   padding: 8px 28px 8px 8px;
-  background-color: var(--main-bg-color);
+  background-color: var(--color-soft-white);
   width: max-content;
   border-radius: 6px;
   background-image: url(/images/link_arrow.svg);
@@ -243,7 +245,6 @@ section h2 {
   transition: 0.4s;
 }
 .use_cases_content .use_cases_content_left a:hover {
-  color: var(--main-font-color-);
   background-color: rgb(244, 244, 244);
 }
 .use_cases_content .use_cases_content_right {
@@ -256,7 +257,6 @@ section h2 {
   background-color: var(--secondary-color);
   border-radius: 20px;
   padding: 20px;
-  color: var(--main-font-color);
   display: flex;
   flex-direction: column;
   gap: 1em;
@@ -264,7 +264,6 @@ section h2 {
 }
 .use_cases_content a {
   text-decoration: none;
-  color: var(--main-font-color);
   font-size: 20px;
   width: max-content;
 }
@@ -291,18 +290,13 @@ section h2 {
   text-align: center;
   text-wrap: balance;
   font-size: 18px;
-  color: var(--main-font-color);
   width: 70%;
 }
 
 .contact_logos {
   display: flex;
-  margin-top: 50px;
 }
-.contact_logos img {
-  height: 120px;
-  width: 120px;
-}
+
 .contact_logos a {
   text-decoration: none;
   display: flex;
@@ -311,7 +305,6 @@ section h2 {
   gap: 10px;
 }
 .contact_logos p {
-  color: var(--main-font-color);
   font-size: 20px;
 }
 
@@ -352,7 +345,6 @@ section h2 {
 }
 .roadmap_body h3 {
   font-size: 24px;
-  color: var(--main-font-color);
   text-align: center;
   margin-top: 24px;
 }
@@ -421,7 +413,6 @@ section h2 {
 footer {
   padding: 50px;
   text-align: center;
-  background-color: rgb(237, 237, 237);
 }
 
 .bg1 {
@@ -489,4 +480,16 @@ footer {
 
 .team_about_text {
   text-align: center;
+}
+
+.filter_scale {
+  @apply transition-all hover:scale-90 hover:opacity-80;
+}
+
+.filter_scale_lower {
+  @apply transition-all hover:scale-[98%];
+}
+
+.hover_header {
+  @apply transition-all hover:scale-95 text-color-sky-blue;
 }

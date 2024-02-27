@@ -27,7 +27,7 @@ export default function AccordionItem({
         className="mx-[5%] md:mx-[10%] lg:mx-[20%] z-50"
         onClick={() => setIsOpen(!isOpen)}
       >
-        <p className="accordion_item_name ">
+        <p className="accordion_item_name filter_scale_lower">
           <img
             src="/images/arrow_down.svg"
             alt=""
