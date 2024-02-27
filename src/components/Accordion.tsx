@@ -40,7 +40,7 @@ export default function AccordionItem({
       </div>
       <div
         ref={accordionBodyRef}
-        className={`flex flex-col items-center justify-start lg:justify-center lg:items-start lg:flex-row lg:gap-4 transition-all duration-[500ms] ${
+        className={`flex flex-col ml-[5%] md:ml-[10%] lg:ml-[20%] max-w-[1024px] items-center justify-start lg:justify-center lg:items-start lg:flex-row lg:gap-4 transition-all duration-[500ms] ${
           isOpen
             ? `max-h-[1000px] opacity-100 overflow-hidden`
             : "max-h-0 opacity-0"
@@ -48,7 +48,7 @@ export default function AccordionItem({
       >
         <p
           ref={descriptionRef}
-          className={`text-center text-xl lg:text-left accordion_item_content ${
+          className={`text-left text-xl lg:text-left accordion_item_content ${
             isOpen ? "flex" : "pointer-events-none"
           }`}
         >

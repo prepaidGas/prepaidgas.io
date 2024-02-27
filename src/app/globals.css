@@ -38,12 +38,6 @@ body {
   overflow-x: hidden;
 }
 
-.container {
-  max-width: 1024px;
-  margin: auto;
-  width: auto;
-}
-
 header {
   margin-top: 12px;
 }
@@ -102,10 +96,6 @@ header {
   font-size: 28px;
   font-weight: 500;
   text-align: right;
-}
-
-.heading {
-  margin-top: 7.2%;
 }
 
 .hero {
@@ -263,10 +253,6 @@ section h2 {
   flex-grow: 1;
 }
 
-.contact_us {
-  margin-top: 100px;
-}
-
 .contact_info {
   margin-top: 3%;
   display: flex;
@@ -349,17 +335,6 @@ section h2 {
   font-size: 18px;
 }
 
-.team {
-  margin-top: 100px;
-}
-
-.team_cards {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  margin-top: 100px;
-}
-
 .team_cards_item {
   display: flex;
   flex-direction: column;
@@ -397,28 +372,17 @@ section h2 {
   margin: 40px 0;
 }
 
-footer {
-  padding: 50px;
-  text-align: center;
-}
-
 .bg1 {
   position: absolute;
   height: 10vw;
   width: 10vw;
   top: 15%;
   left: 25%;
-  background-color: #76d0e7;
   border-radius: 50%;
   filter: blur(85px);
   z-index: -1;
 }
 
-@media (max-width: 1100px) {
-  .container {
-    max-width: 93%;
-  }
-}
 @media (max-width: 1400px) {
   .hero h1 {
     padding: 0 20px 8px 0;
@@ -427,7 +391,7 @@ footer {
   }
 }
 
-@media (max-width: 1000px) {
+@media (max-width: 1024px) {
   .header_wrapper .header_links {
     display: none;
   }
@@ -450,10 +414,8 @@ footer {
     z-index: 1;
   }
 }
+
 @media (max-width: 768px) {
-  .container {
-    max-width: 720px;
-  }
   .team_cards_wrapper {
     display: flex;
     flex-direction: row;
@@ -495,4 +457,110 @@ footer {
 
 .section_title {
   @apply text-color-charcoal-gray;
+}
+
+/*BUTTON CSS FROM CODEPEN*/
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+button {
+  margin: 0;
+  padding: 0;
+  border: none;
+  outline: none;
+  color: inherit;
+  width: 200px;
+  height: 60px;
+  cursor: pointer;
+  font-size: 16px;
+  position: relative;
+}
+.btn {
+  border: 2px solid #000;
+  animation: 0.5s collision ease-in;
+  overflow: hidden;
+  transition: 0.3s 0.1s;
+}
+.btn:active {
+  transform: translateX(100px);
+  background: rgba(255, 255, 255, 0.5);
+}
+.btn p {
+  position: relative;
+  color: #000;
+  font-weight: 700;
+  font-size: 1.2rem;
+  z-index: 5;
+  transition: 1s ease-in-out;
+}
+.btn:hover p {
+  color: #fff;
+}
+.btn:before,
+.btn:after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 20px;
+  width: 20px;
+  border-radius: 50%;
+  background-color: #000;
+}
+.btn:hover:before {
+  animation: collisionLeft 1s both;
+  animation-direction: alternate;
+}
+.btn:hover:after {
+  animation: collisionRight 1s both;
+  animation-direction: alternate;
+}
+.btn:before {
+  left: -30%;
+}
+.btn:after {
+  left: 125%;
+}
+@keyframes collisionLeft {
+  0% {
+    left: -30%;
+    width: 20px;
+    height: 20px;
+  }
+  50% {
+    left: 50%;
+    width: 40px;
+    height: 40px;
+  }
+  100% {
+    left: 50%;
+    width: 300px;
+    height: 300px;
+  }
+}
+@keyframes collisionRight {
+  0% {
+    left: 125%;
+    width: 20px;
+    height: 20px;
+  }
+  50% {
+    left: 50%;
+    width: 40px;
+    height: 40px;
+  }
+  100% {
+    left: 50%;
+    width: 300px;
+    height: 300px;
+  }
+}
+.btn-3 {
+  border: none;
+  background: transparent;
 }
