@@ -69,12 +69,16 @@ export default function Home() {
                   prepaidGas
                 </div>
                 <div className="header_links">
-                  <a href="#description">How does it work?</a>
+                  <a href="#description" className="active_header">
+                    How does it work?
+                  </a>
                   {/* <a href="#use_cases">Use cases</a> */}
                   <a href="#roadmap">Roadmap</a>
                   <a href="#team">Team</a>
                   <a href="#contact_us">Contact us</a>
-                  <a href="">Blog</a>
+                  <a target="_blank" href="https://medium.com/@prepaidGas">
+                    Blog
+                  </a>
                 </div>
                 <div
                   onClick={() => setIsSidebarOpen(!isSidebarOpen)}
@@ -120,6 +124,13 @@ export default function Home() {
                   <a onClick={() => setIsSidebarOpen(false)} href="#team">
                     Team
                   </a>
+                  <a
+                    onClick={() => setIsSidebarOpen(false)}
+                    href="https://medium.com/@prepaidGas"
+                    target="_blank"
+                  >
+                    Blog
+                  </a>
                 </div>
               </div>
             </div>
@@ -138,9 +149,20 @@ export default function Home() {
                 purchase Gas in advance to trade or utilize it as required in
                 the future
               </p>
-              <button className="btn mt-4">
-                <p>Get started</p>
-              </button>
+              <div className="flex flex-row items-center mt-4 gap-4">
+                <button className="btn font-raleway">
+                  <p>Get started</p>
+                </button>
+                <a
+                  href="https://t.me/prepaidgas"
+                  target="_blank"
+                  className="w-[200px] h-[60px] flex justify-center items-center filter_scale"
+                >
+                  <span className="text-base font-semibold text-color-emerald">
+                    view our pitch deck
+                  </span>
+                </a>
+              </div>
             </div>
           </section>
         </div>
@@ -171,9 +193,9 @@ export default function Home() {
         </section>
 
         <section className="mt-16" id="team">
-          <div className="container">
+          <div className="">
             <h2 className="section_title">Team</h2>
-            <div className="team_cards_wrapper">
+            <div className="team_cards_wrapper mt-8">
               <div className="flex flex-col md:grid md:grid-cols-2 md:gap-8 lg:flex lg:flex-row lg:justify-between lg:gap-0">
                 {TeamMemberData.map((item, index) => (
                   <div
@@ -233,7 +255,6 @@ export default function Home() {
                     socialNetwork="telegram"
                     width="64px"
                     height="64px"
-                    color={COLOR_SCHEME.VIBRANT_PINK}
                   />
                 </a>
                 <a href="https://github.com/prepaidgas" target="_blank">
@@ -242,7 +263,6 @@ export default function Home() {
                     socialNetwork="github"
                     width="64px"
                     height="64px"
-                    color={COLOR_SCHEME.VIBRANT_PINK}
                   />
                 </a>
                 <a href="https://twitter.com/prepaidgas_io" target="_blank">
@@ -251,7 +271,6 @@ export default function Home() {
                     socialNetwork="twitter"
                     width="64px"
                     height="64px"
-                    color={COLOR_SCHEME.VIBRANT_PINK}
                   />
                 </a>
               </div>
@@ -264,7 +283,7 @@ export default function Home() {
         </section>
       </div>
       <footer className="bg-color-charcoal-gray text-color-cool-gray flex justify-center">
-        <div className="p-5 flex flex-col-reverse gap-4 md:flex-row md:gap-0 items-center w-full md:justify-between max-w-[1600px]">
+        <div className="px-5 py-7 flex flex-col-reverse gap-4 md:flex-row md:gap-0 items-center w-full md:justify-between max-w-[1024px]">
           <p className="shrink-0 text-center md:text-left">
             PrepaidGas © {currentYear} years after Christ's birth
             <br></br>
@@ -277,7 +296,6 @@ export default function Home() {
                 socialNetwork="telegram"
                 width="24px"
                 height="24px"
-                color={COLOR_SCHEME.COOL_GRAY}
               />
             </a>
             <a href="https://github.com/prepaidgas" target="_blank">
@@ -286,7 +304,6 @@ export default function Home() {
                 socialNetwork="github"
                 width="24px"
                 height="24px"
-                color={COLOR_SCHEME.COOL_GRAY}
               />
             </a>
             <a href="https://twitter.com/prepaidgas_io" target="_blank">
@@ -295,7 +312,6 @@ export default function Home() {
                 socialNetwork="twitter"
                 width="24px"
                 height="24px"
-                color={COLOR_SCHEME.COOL_GRAY}
               />
             </a>
           </div>

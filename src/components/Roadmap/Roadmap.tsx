@@ -19,7 +19,7 @@ export default function Roadmap({
             <div className="flag-wrapper">
               <span className="hexa"></span>
               <span className="flag">{item.title}</span>
-              <span className="time-wrapper bg-color-vibrant-pink">
+              <span className="time-wrapper bg-color-emerald">
                 <span className="time">{item.date}</span>
               </span>
             </div>

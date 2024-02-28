@@ -124,7 +124,7 @@ header p {
   width: 16px;
   height: 10px;
   position: absolute;
-  background: var(--color-vibrant-pink);
+  background: var(--color-emerald);
   z-index: 5;
   left: 0;
   right: 0;
@@ -135,7 +135,7 @@ header p {
 }
 
 .timeline .hexa:before {
-  border-bottom: 4px solid var(--color-vibrant-pink);
+  border-bottom: 4px solid var(--color-emerald);
   border-left-width: 8px;
   border-right-width: 8px;
   top: -4px;
@@ -144,7 +144,7 @@ header p {
 .timeline .hexa:after {
   border-left-width: 8px;
   border-right-width: 8px;
-  border-top: 4px solid var(--color-vibrant-pink);
+  border-top: 4px solid var(--color-emerald);
   bottom: -4px;
 }
 

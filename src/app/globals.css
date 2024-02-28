@@ -436,15 +436,19 @@ section h2 {
 }
 
 .filter_scale {
-  @apply transition-all hover:scale-90 hover:opacity-80;
+  @apply transition-all hover:scale-110 hover:opacity-80;
 }
 
 .filter_scale_lower {
-  @apply transition-all hover:scale-[98%];
+  @apply transition-all hover:scale-[102%];
 }
 
 .hover_header {
-  @apply transition-all hover:scale-95 text-color-sky-blue;
+  @apply transition-all hover:scale-105 text-color-emerald;
+}
+
+.active_header {
+  @apply transform active:scale-75 transition-transform;
 }
 
 .hover_btn {
@@ -456,7 +460,6 @@ section h2 {
 }
 
 /*BUTTON CSS FROM CODEPEN*/
-
 * {
   margin: 0;
   padding: 0;
@@ -476,25 +479,30 @@ button {
   position: relative;
 }
 .btn {
-  border: 2px solid #000;
+  border: 2px solid var(--color-emerald);
   animation: 0.5s collision ease-in;
   overflow: hidden;
   transition: 0.3s 0.1s;
+  /* background-color: var(--color-emerald); */
+  border-radius: 40px;
 }
-.btn:active {
+/* .btn:active {
   transform: translateX(100px);
   background: rgba(255, 255, 255, 0.5);
-}
+} */
 .btn p {
   position: relative;
-  color: #000;
+  color: var(--color-emerald);
   font-weight: 700;
   font-size: 1.2rem;
   z-index: 5;
   transition: 1s ease-in-out;
 }
 .btn:hover p {
-  color: #fff;
+  color: var(--color-soft-white);
+}
+.btn:hover {
+  border: 2px solid var(--color-charcoal-gray);
 }
 .btn:before,
 .btn:after {
@@ -506,7 +514,7 @@ button {
   height: 20px;
   width: 20px;
   border-radius: 50%;
-  background-color: #000;
+  background-color: var(--color-charcoal-gray);
 }
 .btn:hover:before {
   animation: collisionLeft 1s both;
@@ -555,8 +563,4 @@ button {
     width: 300px;
     height: 300px;
   }
-}
-.btn-3 {
-  border: none;
-  background: transparent;
 }
