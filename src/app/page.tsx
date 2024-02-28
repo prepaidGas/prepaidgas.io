@@ -150,8 +150,8 @@ export default function Home() {
           <section className="mt-14 md:mt-[150px] md:ml-8 lg:mt-[175px] font-raleway w-full md:max-w-[1024px]">
             <div className="flex flex-col gap-10 md:gap-4 relative">
               <p className="text-5xl sm:text-6xl md:text-8xl max-w-[750px] font-bold text-transparent bg-clip-text bg-gradient-to-r from-color-charcoal-gray to-color-cool-gray relative text-center md:text-left">
-                <div className="bg1 bg-color-emerald blur-[60px] top-[-20%] sm:top-[-15%] left-[10%] md:left-[-10%] w-[10rem] h-[10rem] md:w-[12rem] md:h-[12rem]"></div>
                 Buy Gas now
+                <span className="bg1 bg-color-emerald blur-[60px] top-[-20%] sm:top-[-15%] left-[10%] md:left-[-10%] w-[10rem] h-[10rem] md:w-[12rem] md:h-[12rem]"></span>
                 <br />
                 use it later
               </p>

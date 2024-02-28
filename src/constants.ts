@@ -108,43 +108,43 @@ export const TeamMemberData: TeamMember[] = [
 
 export const roadmapData: RoadmapItem[] = [
   {
-    title: "Mar 24",
-    date: "Mar 24",
+    title: "2024",
+    date: "March",
     body: "Smart contract implementation with meta-transaction support (ERC-2771)",
   },
   {
-    title: "April 24",
-    date: "Mar 24",
+    title: "2024",
+    date: "April",
     body: "Develop basic bot to accept Gas orders",
   },
   {
-    title: "Q2 24",
-    date: "Mar 24",
+    title: "2024",
+    date: "May",
     body: "Basic interface for the Gas purchasers",
   },
   {
-    title: "Jul 24",
-    date: "Mar 24",
+    title: "2024",
+    date: "May",
     body: "Deploy smart contracts to the testnet",
   },
   {
-    title: "Aug 24",
-    date: "Mar 24",
+    title: "2024",
+    date: "July",
     body: "Audit the smart contracts and verify their reliability",
   },
   {
-    title: "Q4 24",
-    date: "Mar 24",
+    title: "2024",
+    date: "September",
     body: "Add Account Abstraction (EIP-4337) support",
   },
   {
-    title: "Q1 25",
-    date: "Mar 24",
+    title: "2025",
+    date: "October",
     body: "Multichain Solution that enables trading Gas across different L2s",
   },
   {
-    title: "Q2 25",
-    date: "Mar 24",
+    title: "2025",
+    date: "November",
     body: "Plaguing for with Ethers.js and web3.js libraries",
   },
 ];
