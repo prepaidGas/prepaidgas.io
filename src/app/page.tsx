@@ -94,7 +94,7 @@ export default function Home() {
                 </div>
                 <div
                   onClick={() => setIsSidebarOpen(!isSidebarOpen)}
-                  className="mobile_button"
+                  className="mobile_button z-50"
                 >
                   <img
                     id="close-btn"
@@ -114,7 +114,7 @@ export default function Home() {
                   />
                 </div>
                 <div
-                  className={`header_links_mobile flex !md:hidden transform transition duration-500 ease-in-out  ${
+                  className={`header_links_mobile z-40 flex !md:hidden transform transition duration-500 ease-in-out  ${
                     isSidebarOpen ? "translate-x-[0%]" : "translate-x-[100%]"
                   }`}
                 >
@@ -147,21 +147,21 @@ export default function Home() {
               </div>
             </div>
           </header>
-          <div className="bg1 bg-color-emerald"></div>
-          <section className="mt-[100px] md:mt-[150px] md:ml-8 lg:mt-[175px] font-raleway w-full max-w-[1024px]">
-            <div className="flex flex-col gap-4">
-              <p className="text-7xl md:text-8xl max-w-[750px] font-bold text-transparent bg-clip-text bg-gradient-to-r from-color-charcoal-gray to-color-cool-gray">
+          <section className="mt-14 md:mt-[150px] md:ml-8 lg:mt-[175px] font-raleway w-full md:max-w-[1024px]">
+            <div className="flex flex-col gap-10 md:gap-4 relative">
+              <p className="text-5xl sm:text-6xl md:text-8xl max-w-[750px] font-bold text-transparent bg-clip-text bg-gradient-to-r from-color-charcoal-gray to-color-cool-gray relative text-center md:text-left">
+                <div className="bg1 bg-color-emerald blur-[60px] top-[-20%] sm:top-[-15%] left-[10%] md:left-[-10%] w-[10rem] h-[10rem] md:w-[12rem] md:h-[12rem]"></div>
                 Buy Gas now
                 <br />
                 use it later
               </p>
-              <p className="text-2xl font-light max-w-[500px]">
+              <p className="text-xl md:text-2xl font-light mx-0 sm: md:max-w-[500px] text-center md:text-left">
                 The PrepaidGas protocol is a decentralized and permissionless
                 system that enables a Gas futures market. It allows L2s to
                 purchase Gas in advance to trade or utilize it as required in
                 the future
               </p>
-              <div className="flex flex-row items-center mt-4 gap-6">
+              <div className="flex flex-col md:flex-row items-center mt-4 gap-2 md:gap-6">
                 <button className="btn font-raleway">
                   <p>Get started</p>
                 </button>

@@ -357,12 +357,8 @@ section h2 {
 
 .bg1 {
   position: absolute;
-  height: 10vw;
-  width: 10vw;
-  top: 15%;
-  left: 25%;
   border-radius: 50%;
-  filter: blur(85px);
+  /* filter: blur(85px); */
   z-index: -1;
 }
 
