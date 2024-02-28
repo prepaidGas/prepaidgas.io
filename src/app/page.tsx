@@ -161,7 +161,7 @@ export default function Home() {
                 purchase Gas in advance to trade or utilize it as required in
                 the future
               </p>
-              <div className="flex flex-row items-center mt-4 gap-4">
+              <div className="flex flex-row items-center mt-4 gap-6">
                 <button className="btn font-raleway">
                   <p>Get started</p>
                 </button>
@@ -170,7 +170,7 @@ export default function Home() {
                   target="_blank"
                   className="w-[200px] h-[60px] flex justify-center items-center filter_scale"
                 >
-                  <span className="text-base font-semibold text-color-emerald">
+                  <span className="text-xl font-semibold text-color-emerald">
                     view our pitch deck
                   </span>
                 </a>
