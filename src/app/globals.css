@@ -360,6 +360,7 @@ section h2 {
   border-radius: 50%;
   /* filter: blur(85px); */
   z-index: -1;
+  opacity: 60%;
 }
 
 @media (max-width: 1400px) {
