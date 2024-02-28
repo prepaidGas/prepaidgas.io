@@ -1,5 +1,5 @@
 "use client";
-import { useEffect, useState } from "react";
+import { useEffect, useLayoutEffect, useRef, useState } from "react";
 import Accordion from "../components/Accordion";
 import { Poppins, Raleway, Nunito } from "next/font/google";
 import {
@@ -50,6 +50,18 @@ const currentYear = new Date().getFullYear();
 
 export default function Home() {
   const [isSidebarOpen, setIsSidebarOpen] = useState(false);
+  const editorRef = useRef(null);
+
+  useLayoutEffect(() => {
+    const socialLinks = document.querySelectorAll("p");
+    console.log("LINKS: ", { socialLinks });
+    if (socialLinks !== null) {
+      for (var i = 0; i < socialLinks.length; i++) {
+        socialLinks[i].removeAttribute("height");
+        socialLinks[i].removeAttribute("width");
+      }
+    }
+  }, []);
 
   return (
     <main
@@ -215,12 +227,13 @@ export default function Home() {
                         {item.about}
                       </p>
                     </div>
-                    <div className="mt-4 flex flex-row gap-4">
+                    <div className="mt-0 mb-8 flex flex-row gap-4 lg:gap-0">
                       {item.socials?.map((i, index) => (
                         <a
                           key={`link-to-social-${item.name}-${index}`}
                           href={i.url}
                           target="_blank"
+                          className="p-0 lg:p-3 filter_scale"
                         >
                           {/* <img
                             className="w-[2rem] h-[2rem] filter_scale"
@@ -228,10 +241,8 @@ export default function Home() {
                             alt={i.name}
                           /> */}
                           <SocialIcon
-                            className="filter_scale"
+                            className="!w-12 !h-12 lg:!w-9 lg:!h-9"
                             socialNetwork={i.name}
-                            width="2rem"
-                            height="2rem"
                           />
                         </a>
                       ))}
@@ -244,33 +255,27 @@ export default function Home() {
           </div>
         </section>
 
-        <section className="mt-16" id="contact_us">
-          <div className="container">
+        <section className="mt-8" id="contact_us">
+          <div className="">
             <h2 className="section_title">Contact us</h2>
-            <div className="contact_info">
+            <div className="contact_info my-8">
               <div className="contact_logos gap-10 my-4">
                 <a href="https://t.me/prepaidgas" target="_blank">
                   <SocialIcon
-                    className="filter_scale"
+                    className="filter_scale !h-[64px] !w-[64px]"
                     socialNetwork="telegram"
-                    width="64px"
-                    height="64px"
                   />
                 </a>
                 <a href="https://github.com/prepaidgas" target="_blank">
                   <SocialIcon
-                    className="filter_scale"
+                    className="filter_scale !h-[64px] !w-[64px]"
                     socialNetwork="github"
-                    width="64px"
-                    height="64px"
                   />
                 </a>
                 <a href="https://twitter.com/prepaidgas_io" target="_blank">
                   <SocialIcon
-                    className="filter_scale"
+                    className="filter_scale !h-[64px] !w-[64px]"
                     socialNetwork="twitter"
-                    width="64px"
-                    height="64px"
                   />
                 </a>
               </div>
@@ -292,26 +297,23 @@ export default function Home() {
           <div className="flex gap-4 shrink-0">
             <a href="https://t.me/prepaidgas" target="_blank">
               <SocialIcon
-                className="filter_scale"
+                className="filter_scale !w-5 !h-5"
                 socialNetwork="telegram"
-                width="24px"
-                height="24px"
+                color={COLOR_SCHEME.COOL_GRAY}
               />
             </a>
             <a href="https://github.com/prepaidgas" target="_blank">
               <SocialIcon
-                className="filter_scale"
+                className="filter_scale !w-5 !h-5"
                 socialNetwork="github"
-                width="24px"
-                height="24px"
+                color={COLOR_SCHEME.COOL_GRAY}
               />
             </a>
             <a href="https://twitter.com/prepaidgas_io" target="_blank">
               <SocialIcon
-                className="filter_scale"
+                className="filter_scale !w-5 !h-5"
                 socialNetwork="twitter"
-                width="24px"
-                height="24px"
+                color={COLOR_SCHEME.COOL_GRAY}
               />
             </a>
           </div>
