@@ -166,7 +166,7 @@ export default function Home() {
                   <p>Get started</p>
                 </button>
                 <a
-                  href="https://t.me/prepaidgas"
+                  href="https://www.slideshare.net/slideshows/prepaidgas-buy-gas-now-and-use-it-later/266538153"
                   target="_blank"
                   className="w-[200px] h-[60px] flex justify-center items-center filter_scale"
                 >
