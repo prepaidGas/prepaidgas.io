@@ -548,3 +548,7 @@ button {
     height: 300px;
   }
 }
+
+.cog-form__container {
+  background-color: transparent !important;
+}
