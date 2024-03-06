@@ -552,3 +552,63 @@ button {
 .cog-form__container {
   background-color: transparent !important;
 }
+/* @todo: clean the styles */
+.wrapper {
+  max-width: 50rem;
+  width: 100%;
+  margin: 0 auto;
+}
+.tabs {
+  background: var(--color-emerald);
+  display: flex;
+}
+@media (max-width: 768px) {
+  .tabs {
+    flex-direction: column;
+  }
+}
+.tab-switch {
+  display: none;
+}
+.tab-label {
+  position: relative;
+  display: block;
+  line-height: 2.75em;
+  height: 3em;
+  padding: 0 1.618em;
+  background: var(--color-emerald);
+  color: #fff;
+  cursor: pointer;
+  transition: all 0.25s;
+  top: 0;
+}
+.tab-label:hover {
+  top: -0.25rem;
+}
+.tab-content {
+  padding: 1.618rem;
+  background: #fff;
+  color: #2c3e50;
+  display: none;
+  transition: opacity 0.5s ease-in-out; /* Transition effect */
+}
+.tab-content.active {
+  display: block;
+}
+.tab-content img {
+  margin-top: 20px;
+  border-radius: 5px;
+  border: 1px #ccc solid;
+}
+.tab-switch:checked {
+  background: #fff;
+}
+.tab-switch:checked + .tab-label {
+  background: #fff;
+  color: #2c3e50;
+  border-bottom: 0;
+  border-right: 0.125rem solid #fff;
+  transition: all 0.35s;
+  z-index: 1;
+  top: 0;
+}
