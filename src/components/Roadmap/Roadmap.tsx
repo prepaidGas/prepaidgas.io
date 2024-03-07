@@ -16,10 +16,10 @@ export default function Roadmap({
       {roadmapData.map((item, index) => (
         <li key={`roadmap-item-${index}`}>
           <div className={`${index % 2 ? "direction-r" : "direction-l"}`}>
-            <div className="flag-wrapper">
+            <div className="flag-wrapper flex flex-col items-center">
               <span className="hexa"></span>
               <span className="flag">{item.title}</span>
-              <span className="time-wrapper bg-color-vibrant-pink">
+              <span className="time-wrapper bg-color-vibrant-pink flex md:block justify-center items-center rounded-sm md:rounded-none">
                 <span className="time">{item.date}</span>
               </span>
             </div>

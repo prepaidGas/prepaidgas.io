@@ -201,7 +201,6 @@ header p {
 }
 
 .time-wrapper {
-  display: block;
   position: relative;
   margin: 4px 0 0 0;
   z-index: 14;
@@ -308,12 +307,12 @@ header p {
     border-width: 8px;
     left: -8px;
   }
-
+  /* 
   .time-wrapper {
     display: inline;
     vertical-align: middle;
     margin: 0;
-  }
+  } */
 
   .direction-l .time-wrapper {
     float: left;

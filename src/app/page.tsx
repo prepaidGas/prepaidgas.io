@@ -204,7 +204,9 @@ export default function Home() {
                       checked={activeTabWorkflow === 0}
                       onChange={() => setActiveTabWorkflow(0)}
                     />
-                    <label htmlFor="tab-1" className="tab-label">Purchase Gas</label>
+                    <label htmlFor="tab-1" className="tab-label">
+                      Purchase Gas
+                    </label>
                   </div>
                   <div className="tab">
                     <input
@@ -215,10 +217,12 @@ export default function Home() {
                       checked={activeTabWorkflow === 1}
                       onChange={() => setActiveTabWorkflow(1)}
                     />
-                    <label htmlFor="tab-2" className="tab-label">Manage Orders</label>
+                    <label htmlFor="tab-2" className="tab-label">
+                      Manage Orders
+                    </label>
                   </div>
                   <div className="tab">
-                    <input 
+                    <input
                       type="radio"
                       name="css-tabs"
                       id="tab-3"
@@ -226,30 +230,47 @@ export default function Home() {
                       checked={activeTabWorkflow === 2}
                       onChange={() => setActiveTabWorkflow(2)}
                     />
-                    <label htmlFor="tab-3" className="tab-label">Request tx Executions</label>
+                    <label htmlFor="tab-3" className="tab-label">
+                      Request tx Executions
+                    </label>
                   </div>
                 </div>
                 <div className="content">
-                  <div className={`tab-content ${activeTabWorkflow == 0 ? 'active' : ''}`}>
-                    The user creates an order specifying the amount of Gas they want to purchase, setting a timeframe, proposing a price, and specifying the required security deposit.
-                    <img
-                      src="/images/workflow/createOrder-min.png"
-                      alt=""
-                      />
+                  <div
+                    className={`tab-content ${
+                      activeTabWorkflow == 0 ? "active" : ""
+                    }`}
+                  >
+                    The user creates an order specifying the amount of Gas they
+                    want to purchase, setting a timeframe, proposing a price,
+                    and specifying the required security deposit.
+                    <img src="/images/workflow/createOrder-min.png" alt="" />
                   </div>
-                  <div className={`tab-content ${activeTabWorkflow == 1 ? 'active' : ''}`}>
-                    A user reviews orders they are willing to proceed with, gets information on the status of the orders, and manages the amount of gas remaining in their order. Additionally, they have the ability to transfer gas to other users or utilize it themselves.
-                    <img
-                      src="/images/workflow/searchOrder-min.png"
-                      alt=""
-                      />
+                  <div
+                    className={`tab-content ${
+                      activeTabWorkflow == 1 ? "active" : ""
+                    }`}
+                  >
+                    A user reviews orders they are willing to proceed with, gets
+                    information on the status of the orders, and manages the
+                    amount of gas remaining in their order. Additionally, they
+                    have the ability to transfer gas to other users or utilize
+                    it themselves.
+                    <img src="/images/workflow/searchOrder-min.png" alt="" />
                   </div>
-                  <div className={`tab-content ${activeTabWorkflow == 2 ? 'active' : ''}`}>
-                    The user signs a transaction request within the specified timeframe, setting a deadline. This request is sent to the executor and relevant parties. The executor includes the signature in the blockchain.
+                  <div
+                    className={`tab-content ${
+                      activeTabWorkflow == 2 ? "active" : ""
+                    }`}
+                  >
+                    The user signs a transaction request within the specified
+                    timeframe, setting a deadline. This request is sent to the
+                    executor and relevant parties. The executor includes the
+                    signature in the blockchain.
                     <img
                       src="/images/workflow/requestTransaction-min.png"
                       alt=""
-                      />
+                    />
                   </div>
                 </div>
               </div>
@@ -345,8 +366,6 @@ export default function Home() {
               </div>
             </div>
           </section>
-
-          <section className="mt-8" id="contact_us"></section>
         </div>
         <footer className="bg-color-charcoal-gray text-color-cool-gray flex justify-center">
           <div className="px-5 py-7 flex flex-col-reverse gap-4 md:flex-row md:gap-0 items-center w-full md:justify-between max-w-[1024px]">
