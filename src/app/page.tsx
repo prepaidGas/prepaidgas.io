@@ -177,7 +177,7 @@ export default function Home() {
                   </a>
 
                   <a
-                    href="https://www.slideshare.net/slideshows/prepaidgas-buy-gas-now-and-use-it-later/266538153"
+                    href="/prepaidGas_pitchdeck.pdf"
                     target="_blank"
                     className="w-[200px] h-[60px] flex justify-center items-center filter_scale"
                   >
