@@ -67,7 +67,7 @@ export default function Home() {
         className={`${poppins.variable} ${raleway.variable} ${nunito.variable} font-nunito text-color-charcoal-gray`}
       >
         <div className="p-5 flex flex-col items-center">
-          <div className="min-h-[100vh] w-full items-center flex flex-col">
+          <div className="lg:min-h-[100vh] w-full items-center flex flex-col">
             <header className="font-poppins w-full lg:w-full max-w-[1024px]">
               <div className="">
                 <div className="header_wrapper flex flex-row gap-0 justify-between">
@@ -190,7 +190,7 @@ export default function Home() {
             </section>
           </div>
 
-          <section id="description">
+          <section id="description" className="mt-[100px] lg:mt-0">
             <div className="container">
               <h2 className="section_title">How does it work?</h2>
               <div className="wrapper">
