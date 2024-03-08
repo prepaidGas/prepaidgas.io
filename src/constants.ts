@@ -124,7 +124,7 @@ export const roadmapData: RoadmapItem[] = [
   },
   {
     title: "2024",
-    date: "May",
+    date: "June",
     body: "Deploy smart contracts to the testnet",
   },
   {
@@ -134,18 +134,18 @@ export const roadmapData: RoadmapItem[] = [
   },
   {
     title: "2024",
-    date: "September",
+    date: "August",
     body: "Add Account Abstraction (EIP-4337) support",
   },
   {
     title: "2025",
-    date: "October",
+    date: "September",
     body: "Multichain Solution that enables trading Gas across different L2s",
   },
   {
     title: "2025",
     date: "November",
-    body: "Plaguing for with Ethers.js and web3.js libraries",
+    body: "Supplementary dev tools, web3.js ethers.js extensions",
   },
 ];
 
