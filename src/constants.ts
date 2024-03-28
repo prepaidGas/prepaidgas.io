@@ -138,12 +138,12 @@ export const roadmapData: RoadmapItem[] = [
     body: "Add Account Abstraction (EIP-4337) support",
   },
   {
-    title: "2025",
+    title: "2024",
     date: "September",
     body: "Multichain Solution that enables trading Gas across different L2s",
   },
   {
-    title: "2025",
+    title: "2024",
     date: "November",
     body: "Supplementary dev tools, web3.js ethers.js extensions",
   },
