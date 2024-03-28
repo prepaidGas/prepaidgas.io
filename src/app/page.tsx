@@ -176,8 +176,17 @@ export default function Home() {
                     </button>
                   </a>
 
-                  <a
+                  {/* <a
                     href="/prepaidGas_pitchdeck.pdf"
+                    target="_blank"
+                    className="w-[200px] h-[60px] flex justify-center items-center filter_scale"
+                  >
+                    <span className="text-xl font-semibold text-color-emerald">
+                      view our pitch deck
+                    </span>
+                  </a> */}
+                  <a
+                    href="https://www.dropbox.com/scl/fi/kms4swyg67uu5h5ysi5t8/prepaidGas-Pitchdeck-Public.pptx?rlkey=4g5y8dcobvby6ta6m919ae5f9&dl=0"
                     target="_blank"
                     className="w-[200px] h-[60px] flex justify-center items-center filter_scale"
                   >
