@@ -379,7 +379,7 @@ export default function Home() {
         <footer className="bg-color-charcoal-gray text-color-cool-gray flex justify-center">
           <div className="px-5 py-7 flex flex-col-reverse gap-4 md:flex-row md:gap-0 items-center w-full md:justify-between max-w-[1024px]">
             <p className="shrink-0 text-center md:text-left">
-              PrepaidGas © {currentYear} years after Christ's birth
+              PrepaidGas © {currentYear}
               <br></br>
               13.8 billion years after the appearance of the universe
             </p>
