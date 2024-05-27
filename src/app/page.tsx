@@ -167,12 +167,9 @@ export default function Home() {
                   the future
                 </p>
                 <div className="flex flex-col md:flex-row items-center mt-4 gap-2 md:gap-6">
-                  <a
-                    target="_blank"
-                    href="https://www.cognitoforms.com/Ppg14/JoinWaitlist"
-                  >
+                  <a target="_blank" href="https://app.prepaidgas.io/">
                     <button className="btn font-raleway">
-                      <p>Get started</p>
+                      <p>Launch app</p>
                     </button>
                   </a>
 
@@ -186,12 +183,12 @@ export default function Home() {
                     </span>
                   </a> */}
                   <a
-                    href="https://www.dropbox.com/scl/fi/kms4swyg67uu5h5ysi5t8/prepaidGas-Pitchdeck-Public.pptx?rlkey=4g5y8dcobvby6ta6m919ae5f9&dl=0"
+                    href="https://docs.prepaidgas.io/"
                     target="_blank"
                     className="w-[200px] h-[60px] flex justify-center items-center filter_scale"
                   >
                     <span className="text-xl font-semibold text-color-emerald">
-                      view our pitch deck
+                      documentation
                     </span>
                   </a>
                 </div>
@@ -281,6 +278,13 @@ export default function Home() {
                       alt=""
                     />
                   </div>
+                </div>
+                <div className="flex flex-row justify-center items-center my-4">
+                  <a target="_blank" href="https://app.prepaidgas.io/">
+                    <button className="btn font-raleway">
+                      <p>Launch app</p>
+                    </button>
+                  </a>
                 </div>
               </div>
             </div>
