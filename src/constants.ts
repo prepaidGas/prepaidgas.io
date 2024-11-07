@@ -74,24 +74,23 @@ export const TeamMemberData: TeamMember[] = [
       },
     ],
   },
-
-  {
-    name: "Tim",
-    about: "Talking to the community and growing prepaidGas",
-    profilePicName: "/images/profile/Tim.jpg",
-    socials: [
-      {
-        name: "twitter",
-        iconPath: SOCIAL_ICONS_PATHS["twitter"],
-        url: "https://x.com/timmyjellyjelly",
-      },
-      {
-        name: "linkedin",
-        iconPath: SOCIAL_ICONS_PATHS["linkedin"],
-        url: "https://www.linkedin.com/in/timretkoceri/",
-      },
-    ],
-  },
+  // {
+  //   name: "Tim",
+  //   about: "Talking to the community and growing prepaidGas",
+  //   profilePicName: "/images/profile/Tim.jpg",
+  //   socials: [
+  //     {
+  //       name: "twitter",
+  //       iconPath: SOCIAL_ICONS_PATHS["twitter"],
+  //       url: "https://x.com/timmyjellyjelly",
+  //     },
+  //     {
+  //       name: "linkedin",
+  //       iconPath: SOCIAL_ICONS_PATHS["linkedin"],
+  //       url: "https://www.linkedin.com/in/timretkoceri/",
+  //     },
+  //   ],
+  // },
   {
     name: "Nikita",
     about: "Ensuring a seamless and user-friendly interface",
