@@ -298,57 +298,6 @@ export default function Home() {
             </div>
           </section>
 
-          <section className="mt-16" id="team">
-            <div className="">
-              <h2 className="section_title">Team</h2>
-              <div className="team_cards_wrapper mt-8">
-                <div className="flex flex-col md:grid md:grid-cols-2 md:gap-8 lg:flex lg:flex-row lg:justify-between lg:gap-0">
-                  {TeamMemberData.map((item, index) => (
-                    <div
-                      key={`team_cards_item-${index}`}
-                      className="flex flex-col items-center mx-1 md:justify-between"
-                    >
-                      <div className="flex flex-col items-center">
-                        <img
-                          src={item.profilePicName}
-                          alt=""
-                          className="rounded-[50%] lg:w-[200px] md:p-0 max-w-[250px] p-3 mb-[10px]"
-                        />
-                        <h3 className="text-[30px] mb-[5px] text-center font-medium">
-                          {item.name}
-                        </h3>
-                        <p className="text-center mb-[12px] h-[50px] max-w-[250px]">
-                          {item.about}
-                        </p>
-                      </div>
-                      <div className="mt-0 mb-8 flex flex-row gap-4 lg:gap-0">
-                        {item.socials?.map((i, index) => (
-                          <a
-                            key={`link-to-social-${item.name}-${index}`}
-                            href={i.url}
-                            target="_blank"
-                            className="p-0 lg:p-3 filter_scale"
-                          >
-                            {/* <img
-                            className="w-[2rem] h-[2rem] filter_scale"
-                            src={i.iconPath}
-                            alt={i.name}
-                          /> */}
-                            <SocialIcon
-                              className="!w-12 !h-12 lg:!w-9 lg:!h-9"
-                              socialNetwork={i.name}
-                            />
-                          </a>
-                        ))}
-                      </div>
-                      <div className="team_card_bg"></div>
-                    </div>
-                  ))}
-                </div>
-              </div>
-            </div>
-          </section>
-
           <section className="mt-8" id="contact_us">
             <div className="">
               <h2 className="section_title">Contact us</h2>
