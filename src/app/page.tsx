@@ -85,7 +85,6 @@ export default function Home() {
                     </a>
                     {/* <a href="#use_cases">Use cases</a> */}
                     <a href="#roadmap">Roadmap</a>
-                    <a href="#team">Team</a>
                     <a href="#contact_us">Contact us</a>
                     <a target="_blank" href="https://medium.com/@prepaidGas">
                       Blog
