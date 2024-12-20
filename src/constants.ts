@@ -105,7 +105,7 @@ export const TeamMemberData: TeamMember[] = [
   },
 ];
 
-export const roadmapData: RoadmapItem[] = [
+export const ROADMAP_DATA: RoadmapItem[] = [
   {
     title: "2024",
     date: "March",

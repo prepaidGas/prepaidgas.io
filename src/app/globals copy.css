@@ -32,14 +32,26 @@ Secondary Text and Details */
   scroll-padding-top: 50px;
 }
 
+html,
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
 body {
   font-family: Inter;
   background-color: var(--color-soft-white);
   overflow-x: hidden;
 }
 
-header {
-  margin-top: 12px;
+.logo-img {
+  width: 100%; /* Make the image take the full width of the div */
+  height: auto; /* Let the height adjust automatically based on the aspect ratio */
+  max-height: 100%; /* Ensure the height doesn't exceed the div's height */
+  object-fit: contain; /* Make sure the image maintains its aspect ratio */
+  object-position: center; /* Center the image if it's smaller than the container */
 }
 
 .header_wrapper {
@@ -47,11 +59,7 @@ header {
   justify-content: space-between;
   align-items: center;
 }
-.header_wrapper .header_logo {
-  width: 160px;
-  height: 60px;
-  background-color: var(--secondary-color);
-}
+
 .header_wrapper .header_links {
   display: flex;
   justify-content: space-around;
@@ -152,11 +160,6 @@ header {
 }
 .hero_btns .secondary_btn:hover {
   background-color: rgb(213, 204, 204);
-}
-
-section h2 {
-  text-align: center;
-  font-size: 44px;
 }
 
 .accordion_item {
@@ -440,7 +443,7 @@ section h2 {
 }
 
 .section_title {
-  @apply text-color-charcoal-gray;
+  @apply text-color-charcoal-gray text-4xl mb-4;
 }
 
 /*BUTTON CSS FROM CODEPEN*/
@@ -573,15 +576,14 @@ button {
 .tab-label {
   position: relative;
   display: block;
-  line-height: 2.75em;
-  height: 3em;
-  padding: 0 1.618em;
   background: var(--color-emerald);
   color: #fff;
   cursor: pointer;
   transition: all 0.25s;
   top: 0;
+  @apply leading-normal text-2xl py-1 pl-1 md:p-3;
 }
+
 .tab-label:hover {
   top: -0.25rem;
 }
