@@ -1,3 +1,5 @@
+import LaunchAppBttn from "../LaunchAppBttn";
+
 export default function HeroSection() {
   return (
     <section className="font-raleway w-full p-16">
@@ -15,9 +17,7 @@ export default function HeroSection() {
         </p>
         <div className="flex flex-col md:flex-row items-center mt-4 gap-2 md:gap-6">
           <a target="_blank" href="https://app.prepaidgas.io/">
-            <button className="btn font-raleway">
-              <p>Launch app</p>
-            </button>
+            <LaunchAppBttn />
           </a>
 
           {/* <a

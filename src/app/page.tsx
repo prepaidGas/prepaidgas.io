@@ -79,7 +79,7 @@ export default function Home() {
         </div>
       </main> */}
       <main
-        className={`container ${styles.container} text-color-charcoal-gray`}
+        className={`container ${styles.container} ${poppins.variable} ${raleway.variable} ${nunito.variable} font-nunito text-color-charcoal-gray`}
       >
         <div ref={section1}>
           <Mysection

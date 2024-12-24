@@ -1,7 +1,33 @@
-@import "./reset";
+// @import "./reset";
 @import "tailwindcss/base";
 @import "tailwindcss/components";
 @import "tailwindcss/utilities";
+
+:root {
+  --main-bg-color: #f6f6f6;
+  --main-color: rgb(133, 145, 235);
+  --secondary-color: rgb(238, 219, 219);
+  --main-font-color: #2b2727;
+  --secondary-font-color: #717b8b;
+
+  // Headings important text
+  --color-emerald: #009688;
+
+  // Use sky blue for links, call-to-action buttons, and hover effects. Its lighter, welcoming tone complements emerald green and encourages user interaction.
+  --color-sky-blue: #87ceeb;
+
+  // For navigation bars and footers, charcoal gray offers a strong contrast against soft white, making navigation elements easy to locate and read.
+  --color-charcoal-gray: #36454f;
+
+  // Background
+  --color-soft-white: #f5f5f5;
+
+  // Secondary text
+  --color-cool-gray: #aab7b8;
+
+  // Primary calls to action
+  --color-vibrant-pink: #ff8187;
+}
 
 html,
 body {
@@ -27,98 +53,6 @@ a {
   body {
     color: white;
     background: #f6f6f6;
-  }
-}
-
-.btn {
-  border: 2px solid var(--color-emerald);
-  animation: 0.5s collision ease-in;
-  overflow: hidden;
-  transition: 0.3s 0.1s;
-  /* background-color: var(--color-emerald); */
-  border-radius: 40px;
-
-  p {
-    position: relative;
-    color: var(--color-emerald);
-    font-weight: 700;
-    font-size: 1.2rem;
-    z-index: 5;
-    transition: 1s ease-in-out;
-  }
-
-  &:hover {
-    p {
-      color: var(--color-soft-white);
-    }
-    border: 2px solid var(--color-charcoal-gray);
-  }
-
-  &::before,
-  &::after {
-    content: "";
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    height: 20px;
-    width: 20px;
-    border-radius: 50%;
-    background-color: var(--color-charcoal-gray);
-  }
-
-  &::before {
-    left: -30%;
-  }
-
-  &::after {
-    left: 125%;
-  }
-
-  &:hover::before {
-    animation: collisionLeft 1s both;
-    animation-direction: alternate;
-  }
-
-  &:hover::after {
-    animation: collisionRight 1s both;
-    animation-direction: alternate;
-  }
-}
-
-@keyframes collisionLeft {
-  0% {
-    left: -30%;
-    width: 20px;
-    height: 20px;
-  }
-  50% {
-    left: 50%;
-    width: 40px;
-    height: 40px;
-  }
-  100% {
-    left: 50%;
-    width: 300px;
-    height: 300px;
-  }
-}
-
-@keyframes collisionRight {
-  0% {
-    left: 125%;
-    width: 20px;
-    height: 20px;
-  }
-  50% {
-    left: 50%;
-    width: 40px;
-    height: 40px;
-  }
-  100% {
-    left: 50%;
-    width: 300px;
-    height: 300px;
   }
 }
 
