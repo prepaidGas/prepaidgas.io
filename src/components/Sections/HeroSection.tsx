@@ -1,6 +1,6 @@
 export default function HeroSection() {
   return (
-    <section className="font-raleway w-full">
+    <section className="font-raleway w-full p-16">
       <div className="flex flex-col gap-10 md:gap-4 relative">
         <p className="text-5xl sm:text-6xl md:text-8xl max-w-[750px] font-bold text-transparent bg-clip-text bg-gradient-to-r from-color-charcoal-gray to-color-cool-gray relative text-center md:text-left">
           Buy Gas now

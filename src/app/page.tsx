@@ -78,7 +78,9 @@ export default function Home() {
           <SnapScrollPage sections={[]} />
         </div>
       </main> */}
-      <main className={`container ${styles.container}`}>
+      <main
+        className={`container ${styles.container} text-color-charcoal-gray`}
+      >
         <div ref={section1}>
           <Mysection
             image={`/images/austin-neill-Be7DMcK7k3o-unsplash.jpg`}
@@ -98,7 +100,8 @@ export default function Home() {
             scrollTo={scrollTo}
             showArrow={true}
           >
-            {<HDIWSection />}
+            {/* {<HDIWSection />} */}
+            {<span>kek</span>}
           </Mysection>
         </div>
         <div ref={section3}>
